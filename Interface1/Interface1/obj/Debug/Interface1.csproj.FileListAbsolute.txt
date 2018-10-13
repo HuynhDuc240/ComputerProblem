@@ -1,0 +1,12 @@
+C:\MyCode\C#\Interface1\Interface1\bin\Debug\Interface1.exe.config
+C:\MyCode\C#\Interface1\Interface1\bin\Debug\Interface1.exe
+C:\MyCode\C#\Interface1\Interface1\bin\Debug\Interface1.pdb
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.csprojAssemblyReference.cache
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.home.resources
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.Properties.Resources.resources
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.csproj.GenerateResource.cache
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.csproj.CoreCompileInputs.cache
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.exe
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.pdb
+C:\MyCode\C#\Interface1\Interface1\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\MyCode\C#\Interface1\Interface1\obj\Debug\Interface1.csproj.CopyComplete
