@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SbsSW.SwiPlCs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,16 @@ namespace Interface1
         [STAThread]
         static void Main()
         {
+            Environment.SetEnvironmentVariable("SWI_HOME_DIR", @"C:\Program Files (x86)\swipl");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new home());
+            if (!PlEngine.IsInitialized)
+            {
+                String[] empty_param = { "" };
+                PlEngine.Initialize(empty_param);
+                Application.Run(new home());
+                PlEngine.PlCleanup();
+            }
         }
     }
 }
