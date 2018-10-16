@@ -21,3 +21,12 @@ C:\Users\HuynhDuc\Desktop\ComputerProblem\Interface1\Interface1\obj\Debug\Interf
 C:\Users\HuynhDuc\Desktop\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.csproj.CopyComplete
 C:\Users\HuynhDuc\Desktop\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.exe
 C:\Users\HuynhDuc\Desktop\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.pdb
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\bin\Debug\Interface1.exe.config
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.exe
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.pdb
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\bin\Debug\Interface1.exe
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\bin\Debug\Interface1.pdb
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.csprojResolveAssemblyReference.cache
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.home.resources
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.Properties.Resources.resources
+G:\C_Sharp\Winform\Form\ComputerProblem\Interface1\Interface1\obj\Debug\Interface1.csproj.GenerateResource.Cache
