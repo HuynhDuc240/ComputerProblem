@@ -42,11 +42,14 @@
             this.labelOfOption1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.optionPanel.SuspendLayout();
             this.iconPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.headPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // optionPanel
@@ -60,7 +63,6 @@
             this.optionPanel.Name = "optionPanel";
             this.optionPanel.Size = new System.Drawing.Size(190, 584);
             this.optionPanel.TabIndex = 0;
-            this.optionPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bunifuFlatButton1
             // 
@@ -220,7 +222,7 @@
             this.panel1.AutoScroll = true;
             this.panel1.Location = new System.Drawing.Point(196, 95);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(654, 400);
+            this.panel1.Size = new System.Drawing.Size(654, 382);
             this.panel1.TabIndex = 2;
             // 
             // button1
@@ -237,11 +239,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtResult
+            // 
+            this.txtResult.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResult.Location = new System.Drawing.Point(582, 483);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(241, 32);
+            this.txtResult.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(526, 475);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 584);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.txtResult);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.headPanel);
@@ -257,6 +279,7 @@
             this.headPanel.ResumeLayout(false);
             this.headPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,6 +300,8 @@
         private System.Windows.Forms.Button close;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

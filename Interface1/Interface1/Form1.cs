@@ -8,22 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Connect_Prolog;
+
 namespace Interface1
 {
     public partial class home : Form
     {
-
+        public Connect_Prolog.ConnectProlog connect;
 
         public home()
         {
             InitializeComponent();
+            connect = new ConnectProlog();
+            string filePath1 = @"C:\Users\HuynhDuc\Desktop\ComputerProblem\Interface1\Interface1\bin\Debug\Diagnose.pl";
+            connect.Load_file(filePath1);
             addCheckBoxs();
         }
-        string filePath = "G:/C_Sharp/Winform/Form/ComputerProblem/Interface1/FileStream/";
+        string filePath = "C:/Users/HuynhDuc/Desktop/ComputerProblem/Interface1/Interface1/bin/Debug/";
         private Dictionary<string, KeyValuePair<string, bool>> symptoms = new Dictionary<string, KeyValuePair<string, bool>>()
         {
-                { "Đèn nguồn tắt" , new KeyValuePair<string, bool>("led_on", false)},
-                { "Quạt tản nhiệt tắt", new KeyValuePair<string,bool>("fan_on", false) },
+                { "Đèn nguồn bật" , new KeyValuePair<string, bool>("led_on", false)},
+                { "Quạt tản nhiệt bật", new KeyValuePair<string,bool>("fan_on", false) },
                 { "Lỏng dây nguồn", new KeyValuePair<string, bool>("loose_wire", false)},
                 { "Máy phát ra tiếng bip từng hồi và liên tục", new KeyValuePair<string,bool>("long_beep",false) },
                 { "Không vào được hệ điều hành", new KeyValuePair<string,bool>("not_load_os", false) },
@@ -56,10 +61,6 @@ namespace Interface1
             symptoms[cb.Text] = new KeyValuePair<string, bool>(symptoms[cb.Text].Key, !symptoms[cb.Text].Value);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void close_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -84,6 +85,12 @@ namespace Interface1
                 string value = sym.Value.Value ? "yes." : "no.";
                 File.WriteAllText(filePath + sym.Value.Key, value);
             }
+      
+            String s = connect.Query("start(X).");
+            this.txtResult.Text = s;
         }
+
+        
+
     }
 }

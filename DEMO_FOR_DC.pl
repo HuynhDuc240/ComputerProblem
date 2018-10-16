@@ -1,6 +1,6 @@
 start:-
     reason(Problem),
-    write('I believe that the Computer have'),
+    write('Toi doan may tinh ban bi '),
     write(Problem),
     nl,
     undo.
@@ -48,7 +48,7 @@ os_error:-
     nl.
 /* how  to ask question*/
 ask(Question):-
-    write('Dose the Computer have following symptom:'),
+    write('May tinh ban co bi: '),
     write(Question),
     write('? '),
     read(Response),
